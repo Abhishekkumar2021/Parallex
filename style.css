@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    perspective: 100px;
+    position: relative;
+}
+
+.container section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #242424;
+    color: white;
+    padding: 20px;
+}
+
+section:nth-child(2){
+    background-color: #494949;
+}
+
+.section-1{
+    transform: translateZ(-200px) scale(3.1)
+}
+.section-2{
+    transform: translateZ(-100px) scale(2.1)
+}
